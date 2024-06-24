@@ -7,3 +7,138 @@
 
     font-family: 'pt sans'
 }
+
+/* GENERAL */
+
+/* 
+
+COLORI
+
+blu #0084FD
+azzurro #B5DDFF
+viola #9792E4
+giallo #FDC05F
+grigio scuro #333333
+
+*/
+
+.logo {
+    cursor: pointer;
+}
+
+.pill-button {
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.pill-button-blue {
+    color: white;
+    background-color: #0084FD;
+}
+
+.pill-button-violet {
+    color: white;
+    background-color: #9792E4;
+}
+
+.pill-button-white {
+    color: #9792E4;
+    background-color: white;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* HEADER */
+
+header {
+    color: white;
+    background-color: #0084FD;
+    padding: 15px 0;
+}
+
+header .menu {
+    display: none;
+}
+
+header .burger-menu {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    display: inline-block;
+    padding: 4px 8px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*
+-------------------------------
+        RESPONSIVE
+-------------------------------
+*/
+
+/* 
+
+Brakpoints
+
+576px mobile
+768px tablet
+992px desktop
+
+*/
+
+/* MOBILE FIRST */
+
+@media screen and (width: 576px) {
+
+    header .menu {
+        display: none;
+    }
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+
+    header .menu {
+        display: none;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 992px) {
+
+    header .burger-menu {
+        display: none;
+    }
+
+    header .menu {
+        display: block;
+    }
+
+    .desktop-container {
+        max-width: 60%;
+    }
+}
