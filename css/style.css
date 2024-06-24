@@ -18,9 +18,14 @@ blu #0084FD
 azzurro #B5DDFF
 viola #9792E4
 giallo #FDC05F
+grigio chiaro #5A6D7E
 grigio scuro #333333
 
 */
+
+img {
+    max-width: 100%;
+}
 
 .logo {
     cursor: pointer;
@@ -39,6 +44,7 @@ grigio scuro #333333
 .pill-button-blue {
     color: white;
     background-color: #0084FD;
+    padding: 10px 50px;
 }
 
 .pill-button-violet {
@@ -54,9 +60,20 @@ grigio scuro #333333
 .container {
     max-width: 90%;
     margin: 0 auto;
+    padding: 0 10px;
+}
+
+.myrow {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.mycol {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    margin-bottom: 10px;
 }
 
 /* HEADER */
@@ -65,6 +82,12 @@ header {
     color: white;
     background-color: #0084FD;
     padding: 15px 0;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header .menu {
@@ -92,9 +115,47 @@ header ul li a {
     cursor: pointer;
 }
 
+/* MAIN */
+
+main section {
+    padding: 40px 0;
+}
+
+#intro .card {
+    background-color: #B5DDFF;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#intro .mycol:first-child .card {
+    padding-bottom: 0;
+}
+
+#intro .card div>* {
+    margin-bottom: 20px;
+}
+
+#intro .i-blu {
+    font-size: 4rem;
+    color: #0084FD;
+}
+
+#intro h2 {
+    color: #0084FD;
+}
+
+#intro p {
+    color: #5A6D7E;
+    font-weight: bold;
+}
+
 /*
 -------------------------------
-        RESPONSIVE
+          RESPONSIVE
 -------------------------------
 */
 
@@ -110,19 +171,21 @@ Brakpoints
 
 /* MOBILE FIRST */
 
-@media screen and (width: 576px) {
+
+/* TABLET */
+
+@media screen and (min-width: 576px) {
 
     header .menu {
         display: none;
     }
-}
 
-/* TABLET */
+    .mycol-1-3 {
+        width: calc((100% / 3) - 20px);
+    }
 
-@media screen and (min-width: 768px) {
-
-    header .menu {
-        display: none;
+    .mycol-2-3 {
+        width: calc(((100% / 3) *2) - 20px);
     }
 }
 
@@ -140,5 +203,13 @@ Brakpoints
 
     .desktop-container {
         max-width: 60%;
+    }
+
+    .mycol-1-3 {
+        width: calc((100% / 3) - 20px);
+    }
+
+    .mycol-2-3 {
+        width: calc(((100% / 3) *2) - 20px);
     }
 }
