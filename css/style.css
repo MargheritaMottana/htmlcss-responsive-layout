@@ -176,8 +176,8 @@ main section {
     padding: 30px;
 }
 
-#footer-top>*,
-#footer-bottom>* {
+#footer-top .footer-t-container>*,
+#footer-bottom .footer-t-container>* {
     margin-bottom: 30px;
 }
 
@@ -252,6 +252,13 @@ Brakpoints
     .mycol-2-3 {
         width: calc(((100% / 3) *2) - 20px);
     }
+
+    /* footer */
+
+    .footer-t-container {
+        max-width: 60%;
+        margin: 0 auto;
+    }
 }
 
 /* DESKTOP */
@@ -286,4 +293,12 @@ Brakpoints
     #intro .desktop-card>.myrow {
         flex-wrap: nowrap;
     }
+
+    /* footer */
+
+    .footer-d-container {
+        max-width: 30%;
+        margin: 0 auto;
+    }
+
 }
