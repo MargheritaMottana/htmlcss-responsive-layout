@@ -121,10 +121,13 @@ main section {
     padding: 40px 0;
 }
 
+/* intro */
+
 #intro .card {
     background-color: #B5DDFF;
     border-radius: 20px;
     padding: 30px;
+    height: 100%;
 }
 
 .text-center {
@@ -211,5 +214,14 @@ Brakpoints
 
     .mycol-2-3 {
         width: calc(((100% / 3) *2) - 20px);
+    }
+
+    .desktop-card {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #intro .desktop-card>.myrow {
+        flex-wrap: nowrap;
     }
 }
