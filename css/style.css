@@ -175,7 +175,7 @@ intro
 
 /* 
 planning
- */
+*/
 
 #planning {
     background-color: #9792E4;
@@ -215,6 +215,56 @@ planning
     font-size: 1.3rem;
     padding: 10px 15px;
     margin-bottom: 0;
+}
+
+/* 
+testimonial 
+*/
+
+#testimonials div .myrow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #9792E4;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#testimonials {
+    text-align: center;
+}
+
+#testimonials .description-testimonials>* {
+    margin-bottom: 30px;
+}
+
+#testimonials h2 {
+    font-size: 2rem;
+    color: #9792E4;
+}
+
+#testimonials .mycol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#testimonials .mycol .foto-profilo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#testimonials .feedback p:last-child {
+    font-weight: bold;
+    margin-top: 20px;
 }
 
 /* 
@@ -315,6 +365,28 @@ TABLET
         width: calc(((100% / 3) *2) - 20px);
     }
 
+    /* main - testimonials */
+
+    #testimonials div .myrow {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #testimonials .mycol {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-items: center;
+    }
+
+    #testimonials .mycol:first-child {
+        width: 30%;
+    }
+
+    #testimonials .mycol:last-child {
+        width: 70%;
+    }
+
     /* footer */
 
     .footer-t-container {
@@ -385,18 +457,11 @@ DESKTOP
         margin-bottom: 30px;
     }
 
-    /* 
-    #planning .mycol .card {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    } */
+    /* footer */
 
-}
+    .footer-d-container {
+        max-width: 30%;
+        margin: 0 auto;
+    }
 
-/* footer */
-
-.footer-d-container {
-    max-width: 30%;
-    margin: 0 auto;
 }
