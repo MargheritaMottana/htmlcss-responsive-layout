@@ -39,6 +39,7 @@ img {
     color: black;
     background-color: white;
     cursor: pointer;
+    display: inline-block;
 }
 
 .pill-button-blue {
@@ -142,6 +143,16 @@ main section {
     margin-bottom: 20px;
 }
 
+#intro .card div.img-phone {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0;
+}
+
+#intro .card .img-phone>* {
+    margin-bottom: 0;
+}
+
 #intro .i-blu {
     font-size: 4rem;
     color: #0084FD;
@@ -154,6 +165,57 @@ main section {
 #intro p {
     color: #5A6D7E;
     font-weight: bold;
+}
+
+/* FOOTER */
+
+#footer-top,
+#footer-bottom {
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+#footer-top>*,
+#footer-bottom>* {
+    margin-bottom: 30px;
+}
+
+/* footer top */
+
+#footer-top h2 {
+    font-size: 4rem;
+    color: #FDC05F;
+}
+
+#footer-top {
+    background-color: #9792E4;
+}
+
+#footer-top .false-title {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+#footer-top .pill-button-white {
+    font-weight: bold;
+    padding: 15px 60px;
+}
+
+#footer-top a {
+    color: white;
+    cursor: pointer;
+}
+
+/* footer bottom */
+
+#footer-bottom {
+    background-color: #333333;
+}
+
+#footer-bottom a {
+    color: #9792E4;
 }
 
 /*
